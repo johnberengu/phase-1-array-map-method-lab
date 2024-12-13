@@ -20,5 +20,6 @@ const titleCased = () => {
       .join(" ");
   });
 }
+console.log(titleCased());
 
 
