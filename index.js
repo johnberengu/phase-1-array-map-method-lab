@@ -20,6 +20,6 @@ const titleCased = () => {
       .join(" ");
   });
 }
-console.log(titleCased());
 
+module.exports = { titleCased };
 
