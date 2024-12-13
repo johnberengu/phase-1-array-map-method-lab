@@ -10,19 +10,16 @@ const tutorials = [
   'what is the difference between event capturing and bubbling?',
   'what is JSONP?'
 ];
+// function titleCased
 const titleCased = () => {
-  // Use map to iterate over each tutorial in the array
   return tutorials.map(tutorial => {
-    // Split each tutorial into an array of words, capitalize each word, and rejoin the words
+    // splits each tutorial into words capitalize them and join them together
     return tutorial
-      .split(" ") // Split the string into individual words
-      .map(word => 
-        word.charAt(0).toUpperCase() + word.slice(1) // Capitalize the first letter of each word
-      )
-      .join(" "); // Join the words back into a single string
+      .split(" ") 
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1)) 
+      .join(" ");
   });
-};
-
-// Example usage: Log the output of the titleCased function
+}
 console.log(titleCased());
+
 
